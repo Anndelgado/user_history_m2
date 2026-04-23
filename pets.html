@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <h2>My Pets</h2>
-    </header>
     <nav>
-        <li><a href="index.html">Principal page</a></li>
+        <a href="index.html">Principal page</a>
     </nav>
+    </header>
+
     <main>
-        <section>
+        <div class="gallery fade-in">
+            <div class="card">
             <img src="https://misanimales.com/wp-content/uploads/2021/07/jirafa-mira-horizonte-768x576.jpg"
                 alt="Jiraffe">
             <article>
@@ -23,8 +26,9 @@
                 numquam accusamus minima explicabo, voluptatum cumque laboriosam reprehenderit tempora repudiandae nam
                 voluptas sint omnis modi enim pariatur!
             </article>
-        </section>
-        <section>
+            </div>
+
+        <div class="card">
             <img src="https://www.beonloop.com/wp-content/uploads/2024/11/panda-rojo-mordilla-net-pIXABAY02.webp"
                 alt="Red panda">
             <article>
@@ -32,17 +36,19 @@
                 numquam accusamus minima explicabo, voluptatum cumque laboriosam reprehenderit tempora repudiandae nam
                 voluptas sint omnis modi enim pariatur!
             </article>
-        </section>
-        <section>
+        </div>
+
+        <div class="card">
             <img src="https://a.storyblok.com/f/160385/4bf112f0cd/datos_curiosos.jpg/m/?w=256&q=100" alt="Cow">
             <article>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat consectetur quam facilis adipisci
                 numquam accusamus minima explicabo, voluptatum cumque laboriosam reprehenderit tempora repudiandae nam
                 voluptas sint omnis modi enim pariatur!
             </article>
-        </section>
+        </div>
+        </div>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
