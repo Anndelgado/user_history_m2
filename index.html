@@ -2,50 +2,257 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User history M2</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Yulianis Dev</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <h2>Yulianis Delgado</h2>
-        <nav>
-        <a href="pets.html">My pets</a>
+
+    <header class="header">
+        <nav class="nav">
+        <div class="logo">Yulianis Delgado</div>
+
+        <div class="menu_" id="menu_">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About Me</a></li> 
+            <li><a href="#projects">Projects</a></li> 
+            <li><a href="pets.html">My Pets</a></li>  
+            <li><a href="#contact">Contact</a></li> 
+        </ul>
         </nav>
     </header>
 
+    <section class="hero fade-in">
+        <div class="hero-content">
+
+            <div class="hero-text">
+                <h1>I build modern <span>web experiences</span>.</h1>
+
+                <p>
+                    Systems Engineer with experience in web development,
+                    agile methodologies and digital solutions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+            </div>
+
+        </div>
+    </section>
+
     <main>
-        <section class="fade-in">
-            <h3>About Me</h3>
-                <p>Hi, I'm Yulianis Delgado, a Systems Engineer passionate about web development
-                    and creating clean, user-friendly interfaces.</p>
-        </section>
-        <section class="fade-in">
-            <h3>Projects</h3>
-            <div class="projects">
-                <a href="https://github.com/Anndelgado/terminal_soul.git" target="_blank">Terminal soul game</a>
-                <a href="https://github.com/Anndelgado/Clan-6.git" target="_blank">Calculator</a>
-                <a href="https://github.com/Anndelgado/terminal_soul.git" target="_blank">Terminal soul game</a>
-                <a href="https://github.com/Anndelgado/Clan-6.git" target="_blank">Calculator</a>
+
+        <section id="about" class="section fade-in">
+            <div class="about-grid">
+
+                <div>
+                    <h2>About Me</h2>
+                    <p>
+                        Hi, I'm Yulianis Delgado, Systems Engineer based in Barranquilla.
+                        Experience in projects, operations and digital solutions.
+                    </p>
+
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Scrum & Agile</li>
+                        <li>Excel & Data</li>
+                        <li>UI/UX focus</li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <span>HTML & CSS <b>90%</b></span>
+                        <div class="bar">
+                            <div style="width:90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>JavaScript <b>80%</b></span>
+                        <div class="bar">
+                            <div style="width:80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Excel / Data <b>85%</b></span>
+                        <div class="bar">
+                            <div style="width:85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Agile / Scrum <b>80%</b></span>
+                        <div class="bar">
+                            <div style="width:80%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
-        <section class="fade-in">
-            <h3>Contact</h3>
-            <form action="/procesar-datos" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+        <section id="projects" class="section fade-in">
+            <h2>Projects</h2>
 
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="projects">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Terminal Soul</h3>
+                        <p>Interactive terminal-based game built with JavaScript logic.</p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Game Logic</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/Anndelgado/terminal_soul" target="_blank"
+                                class="btn secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Calculator App</h3>
+                        <p>Responsive calculator with clean UI and JS functionality.</p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Game Logic</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/Anndelgado/Clan-6/blob/main/calculadora.py" target="_blank"
+                                class="btn secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Langing Page</h3>
+                        <p>Interactive Landig Page about a Italy House´s.</p>
+
+                        <div class="tags">
+                            <span>CSS</span>
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>Game Logic</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://github.com/Anndelgado/Landing_page" class="btn secondary"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact fade-in">
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's work together 🚀</h2>
+                    <p>
+                        I'm currently open to opportunities, collaborations or freelance work.
+                        Feel free to reach out — I'll get back to you as soon as possible.
+                    </p>
+
+                    <div class="contact-details">
+                        <p><strong>Location:</strong> Barranquilla, Colombia</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
 
         </section>
+
     </main>
- <script src="script.js"></script>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Social</h4>
+
+                <a href="https://co.linkedin.com/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>yulianisdelgadob@gmail.com</p>
+                <p>+57 323 323 3233</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>More Info</h4>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
+        </div>
+
+        <p class="footer-copy">© <span id="year"></span> Yulianis Delgado</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Pets</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h2>My Pets</h2>
-    <nav>
-        <a href="index.html">Principal page</a>
-    </nav>
-    </header>
 
-    <main>
-        <div class="gallery fade-in">
-            <div class="card">
-            <img src="https://misanimales.com/wp-content/uploads/2021/07/jirafa-mira-horizonte-768x576.jpg"
-                alt="Jiraffe">
-            <article>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat consectetur quam facilis adipisci
-                numquam accusamus minima explicabo, voluptatum cumque laboriosam reprehenderit tempora repudiandae nam
-                voluptas sint omnis modi enim pariatur!
-            </article>
+<header class="header">
+  <div class="logo">Pets</div>
+
+  <nav class="nav">
+    <a href="index.html">← Back to Portfolio</a>
+  </nav>
+</header>
+
+<main class="section">
+
+<h2 class="pets-title">My Pets</h2>
+
+<div class="pets-grid">
+
+  <div class="pet-card">
+    <img src="https://i0.wp.com/puppis.blog/wp-content/uploads/2020/02/Labradores-grandes-en-tamano-y-en-amor.jpg?resize=1024%2C683&ssl=1" alt="dog">
+    <div class="pet-info">
+      <h3>Muñeca</h3>
+      <span class="tag">Dog</span>
+      <p>Friendly, energetic and loves playing.</p>
+    </div>
+  </div>
+
+  <div class="pet-card">
+    <img src="https://cdn.shopify.com/s/files/1/0450/7392/4260/files/They_ve_Got_Sass_to_Spare.png?v=1642760705" alt="cat">
+    <div class="pet-info">
+      <h3>Michi</h3>
+      <span class="tag">Cat</span>
+      <p>Calm, curious and loves sleeping.</p>
+    </div>
+  </div>
+
+  <div class="pet-card">
+    <img src="https://www.zooplus.es/magazine/wp-content/uploads/2017/09/fotolia_80512914.webp" alt="dog">
+    <div class="pet-info">
+      <h3>Rocky</h3>
+      <span class="tag">Dog</span>
+      <p>Playful, shy and super cute.</p>
+    </div>
+  </div>
+
+</div>
+
+</main>
+
+ <!-- FOOTER -->
+
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Social</h4>
+
+                <a href="https://co.linkedin.com/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> Linkedin
+                </a>
+                <a href="https://github.com" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
             </div>
 
-        <div class="card">
-            <img src="https://www.beonloop.com/wp-content/uploads/2024/11/panda-rojo-mordilla-net-pIXABAY02.webp"
-                alt="Red panda">
-            <article>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat consectetur quam facilis adipisci
-                numquam accusamus minima explicabo, voluptatum cumque laboriosam reprehenderit tempora repudiandae nam
-                voluptas sint omnis modi enim pariatur!
-            </article>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>yulianisdelgadob@gmail.com</p>
+                <p>+57 323 323 3233</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>More Info</h4>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+
         </div>
 
-        <div class="card">
-            <img src="https://a.storyblok.com/f/160385/4bf112f0cd/datos_curiosos.jpg/m/?w=256&q=100" alt="Cow">
-            <article>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat consectetur quam facilis adipisci
-                numquam accusamus minima explicabo, voluptatum cumque laboriosam reprehenderit tempora repudiandae nam
-                voluptas sint omnis modi enim pariatur!
-            </article>
-        </div>
-        </div>
-    </main>
-    <script src="script.js"></script>
+        <p class="footer-copy">© <span id="year"></span> Yulianis Delgado</p>
+    </footer>
+<script src="script.js"></script>
 </body>
-
 </html>
